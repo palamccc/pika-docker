@@ -2,7 +2,7 @@ FROM debian:stretch-slim
 RUN cd /tmp \
   && apt-get update \
   && apt-get install -y --no-install-recommends wget ca-certificates bzip2 \
-  && wget https://github.com/Qihoo360/pika/releases/download/v2.3.5/pika-linux-x86_64-v2.3.5.tar.bz2 \
+  && wget https://github.com/Qihoo360/pika/releases/download/v3.0.5/pika-linux-x86_64-v3.0.5.tar.bz2 \
   && tar xjvf /tmp/pika-linux*.tar.bz2 \
   && mkdir /pika \
   && mv output/* /pika \
